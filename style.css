@@ -1,0 +1,52 @@
+
+.playfield {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-auto-rows: 200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.play-card {
+  background-color: rgb(168, 166, 166);
+  font-size: 0px;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+}
+
+
+.play-card:hover {
+  background-color: rgb(204, 202, 202);
+}
+.play-card:active {
+  background-color: rgb(170, 214, 228);
+}
+
+.opened {
+  background-color: rgb(170, 214, 228);
+  font-size: 80px;
+}
+
+.opened .card-image{
+  transform: scale(1);
+}
+
+.opened:hover {
+  background-color: rgb(170, 214, 228);
+}
+.opened:active {
+  background-color: rgb(170, 214, 228);
+}
+
+.success {
+  border: 5px solid green;
+}
+
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
